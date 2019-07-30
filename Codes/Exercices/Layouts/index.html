@@ -50,11 +50,13 @@
                 }),
                 ariaLabelledBy: oLabel
             });
+
             oRadioButtonGroup.addButton(oRadioButton);
             oRadioButtonGroup.addButton(oRadioButton2);
             var oLabel2 = new sap.m.Label("rbg2Label", {
                 text: "Do you speak JavaScript?"
             });
+
             var oRadioButtonGroup2 = new sap.m.RadioButtonGroup({
                 columns: 2,
                 buttons: [
@@ -65,8 +67,12 @@
                         text: "No"
                     }),
                 ],
+                layoutData: new sap.ui.layout.GridData({
+                    span: 'XL12 L12 M12 S12'
+                }),
                 ariaLabelledBy: "rbg2Label"
             });
+
             new sap.ui.layout.Grid({
                 content: [
                     oImage,
