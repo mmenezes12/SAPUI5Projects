@@ -43,18 +43,23 @@
             var oRadioButton2 = new sap.m.RadioButton({
                 text: "Right Logo"
             });
+
             var oRadioButtonGroup = new sap.m.RadioButtonGroup({
                 columns: 2,
-                /* layoutData: new sap.ui.layout.GridData({
+                layoutData: new sap.ui.layout.GridData({
                     span: 'XL12 L12 M12 S12'
-                }), */
+                }),
                 ariaLabelledBy: oLabel
             });
 
             oRadioButtonGroup.addButton(oRadioButton);
             oRadioButtonGroup.addButton(oRadioButton2);
-            var oLabel2 = new sap.m.Label("rbg2Labe2", {
-                text: "Do you speak JavaScript?"
+
+            var oLabel2 = new sap.m.Label("rbg2Label", {
+                text: "Do you speak JavaScript?",
+                layoutData: new sap.ui.layout.GridData({
+                    span: 'XL12 L12 M12 S12'
+                })
             });
 
             var oRadioButtonGroup2 = new sap.m.RadioButtonGroup({
@@ -70,7 +75,7 @@
                 layoutData: new sap.ui.layout.GridData({
                     span: 'XL12 L12 M12 S12'
                 }),
-                ariaLabelledBy: oLabel2
+                ariaLabelledBy: "rbg2Label"
             });
 
             new sap.ui.layout.Grid({
