@@ -13,4 +13,4 @@ https://experience.sap.com/fiori-design/ --> Guidelines para aplicações Fiori 
 
 https://www.build.me/ --> Ferramente para prototipação de aplicações fiori
 
-https://sapui5.hana.ondemand.com/ --> Documentção Técnica Fiori (Todos os objetos do SAPUI5
+https://sapui5.hana.ondemand.com/ --> Documentação Técnica Fiori (Todos os objetos do SAPUI5)
