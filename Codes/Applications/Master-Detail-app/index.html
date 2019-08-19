@@ -47,15 +47,20 @@
         // so that it’s available in the whole application
         sap.ui.getCore().setModel(oModel);
 
-        var oPageMasterView = sap.ui.view("masterPage", {
+        var oPageMaster = sap.ui.view("masterPage", {
             type: sap.ui.core.mvc.ViewType.JS,
             viewName: "sapui5.mdapp.view.Master"
         });
-        
+
+        var oPageDetail = sap.ui.view("detailPage", {
+            type: sap.ui.core.mvc.ViewType.JS,
+            viewName: "sapui5.mdapp.view.Detail",
+        });
+
         var oApp = new sap.m.App({
             initialPage: "masterPage"
         });
-        oApp.addPage(oPageMasterView);
+        oApp.addPage(oPageMaster).addPage(oPageDetail);
         oApp.placeAt("content");
     </script>
 </head>
