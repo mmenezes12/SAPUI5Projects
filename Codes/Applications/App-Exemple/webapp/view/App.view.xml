@@ -1,0 +1,6 @@
+<mvc:View controllerName="sapui5pj.appexemp.AppExemp.controller.App" 
+        xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<SplitApp id="splitapp" />
+	</Shell>
+</mvc:View>
